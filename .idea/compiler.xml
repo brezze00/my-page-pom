@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="my-page-plugin" />
+        <module name="my-page-boot-starter" />
+        <module name="my-page-web" />
+        <module name="my-page-commons" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="my-page-boot-starter" options="-parameters" />
+      <module name="my-page-commons" options="-parameters" />
+      <module name="my-page-plugin" options="-parameters" />
+      <module name="my-page-web" options="-parameters" />
+    </option>
+  </component>
+</project>

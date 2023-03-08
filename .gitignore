@@ -1,0 +1,5 @@
+# Project exclude paths
+/my-page-boot-starter/target/
+/my-page-commons/target/
+/my-page-plugin/target/
+/my-page-web/target/
