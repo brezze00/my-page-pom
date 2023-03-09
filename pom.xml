@@ -9,7 +9,7 @@
         <version>2.3.0.RELEASE</version>
     </parent>
 
-    <groupId>com.tj</groupId>
+    <groupId>io.github.qinglengdeweifeng</groupId>
     <artifactId>my-page-pom</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -37,7 +37,7 @@
             </dependency>
 
             <dependency>
-                <groupId>com.tj</groupId>
+                <groupId>io.github.qinglengdeweifeng</groupId>
                 <artifactId>my-page-commons</artifactId>
                 <version>${my-page-commons.version}T</version>
             </dependency>
