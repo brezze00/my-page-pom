@@ -16,10 +16,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="my-page-boot-starter" options="-parameters" />
-      <module name="my-page-commons" options="-parameters" />
-      <module name="my-page-plugin" options="-parameters" />
-      <module name="my-page-web" options="-parameters" />
+      <module name="my-page-boot-starter" options="" />
+      <module name="my-page-commons" options="" />
+      <module name="my-page-plugin" options="" />
+      <module name="my-page-web" options="" />
     </option>
   </component>
 </project>

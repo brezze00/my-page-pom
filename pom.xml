@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <groupId>org.springframework.boot</groupId>
-        <version>2.3.0.RELEASE</version>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
     </parent>
 
     <groupId>io.github.qinglengdeweifeng</groupId>
@@ -31,6 +31,13 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.0.RELEASE</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
@@ -41,9 +48,63 @@
                 <artifactId>my-page-commons</artifactId>
                 <version>${my-page-commons.version}T</version>
             </dependency>
+
         </dependencies>
 
 
     </dependencyManagement>
+
+    <!-- 开源许可证声明
+        有很多不同的开源许可证
+     Apache Version2.0 表示别人可以直接商用你的开源项目而无任何版权问题 -->
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+
+    <!--开源地址-->
+    <scm>
+        <connection>scm:git:git@github.com:qinglengdeweifeng/page-tool.git</connection>
+        <developerConnection>scm:git:git@github.com:qinglengdeweifeng/page-tool.git</developerConnection>
+        <url>git@github.com:qinglengdeweifeng/page-tool.git</url>
+    </scm>
+
+    <!--  Issue地址  -->
+    <issueManagement>
+        <system>Github Issue</system>
+        <url>https://github.com/qinglengdeweifeng/page-tool/issues</url>
+    </issueManagement>
+
+
+    <!-- 开发者信息 -->
+    <developers>
+        <developer>
+            <name>brezze</name>
+            <id>brezze</id>
+            <email>1273969594@qq.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
+
+    <!-- 发布的仓库地址，注意id的ossrh必须和上一步中setting.xml中配置的server的id一致
+    注意：网上介绍的地址基本都已经过时
+     -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
