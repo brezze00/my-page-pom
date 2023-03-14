@@ -12,7 +12,7 @@
     <groupId>io.github.qinglengdeweifeng</groupId>
     <artifactId>my-page-pom</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <modules>
         <module>my-page-web</module>
         <module>my-page-plugin</module>
@@ -54,9 +54,7 @@
 
     </dependencyManagement>
 
-    <!-- 开源许可证声明
-        有很多不同的开源许可证
-     Apache Version2.0 表示别人可以直接商用你的开源项目而无任何版权问题 -->
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>

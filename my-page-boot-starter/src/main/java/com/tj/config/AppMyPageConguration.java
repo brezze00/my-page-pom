@@ -19,7 +19,7 @@ public class AppMyPageConguration {
     @Bean
     @ConditionalOnProperty(prefix = "mypage.page", name = "enable", havingValue = "true", matchIfMissing = true)
     public MyIntercept getMyIntercept(){
-        System.out.println("我的插件被加载啦！！！");
+        System.out.println("童佳的插件被加载啦！！！");
         return new MyIntercept();
     }
 
@@ -28,7 +28,7 @@ public class AppMyPageConguration {
     @ConditionalOnBean(MyIntercept.class)
     @ConditionalOnProperty(prefix = "mypage.web", name = "enable", havingValue = "true", matchIfMissing = true)
     public MyPageAspect getMyPageAspect(){
-        System.out.println("我的AOP 被加载拉！！！");
+        System.out.println("你佳哥最帅");
         return new MyPageAspect();
     }
 
